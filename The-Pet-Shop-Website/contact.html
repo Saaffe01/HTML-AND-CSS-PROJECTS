@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>The Pet Shop</title>
 </head>
 <body>
     <!-- NAVBAR-->
-     <nav>
+     <nav class="nav-bar">
         <ul>
             <li> <a href="index.html">HOME</a></li>
             <li> <a href="contact.html">CONTACT</a></li>
@@ -17,22 +18,22 @@
     <header>
         <meta name="description" content="This page shows how we created a contact form for this submission.">
         <div>
-            <h1>Contact Us</h1>
+            <h1 class="animate-text">Contact Us</h1>
         </div>
     </header>
      <!--FORM-->
      <section>
         <div>
-          <h3>Please provide your contact information and a brief message about your inquiry.</h3>
+          <h3 id="contact-h3">Please provide your contact information and a brief message about your inquiry.</h3>
           <div>
             <form action="">
-              <input placeholder="First Name" type="text"> <br>
+              <input placeholder="First Name" type="text">
               <input placeholder="Last Name" type="text"> <br>
-              <input type="email" placeholder="E-mail"> <br>
-              <input type="tel" placeholder="Number">
+              <input type="email" placeholder="E-mail">
+              <input type="tel" placeholder="Number"> <br>
               <input type="checkbox" id="Newsletter">
               <label for="Newsletter">Would you like to recieve our monthly newsletter ? </label> <br>
-              <textarea placeholder="Type message here!"></textarea>
+              <textarea placeholder="Type message here!"></textarea> <br>
               <input type="submit" value="Submit">
             </form>
           </div>

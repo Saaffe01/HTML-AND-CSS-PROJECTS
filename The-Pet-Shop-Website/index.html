@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>The Pet Shop</title>
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav>
-      <ul>
+    <nav class="nav-bar">
+      <ul id="nav-border">
         <li><a href="index.html">HOME</a></li>
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
@@ -24,73 +25,97 @@
     </nav>
     <!-- HEADER -->
     <header>
-      <meta name="description" content="this website is about animals">
+      <meta name="description" content="this website is about animals" />
       <blockquote>
         "Unleash a world of love, care, and endless tail-wagging adventures."
-    </blockquote>
+      </blockquote>
       <div>
-        <h1>Welcome to the pet shop!</h1>
+        <h1 class="animate-text">Welcome to the pet shop!</h1>
       </div>
     </header>
     <!-- PET IMAGES-->
     <section>
-      <div>
+      <div class="container">
         <h2>Choose a pet</h2>
         <div>
           <!-- DOG IMAGE -->
-          <div id="dog">
-            <h3>Dogs and Puppies</h3>
-            <img src="Images/BIRTHDAY-DOG.jpeg" alt="Birthday Dog" />
+          <div id="dog" class="column">
+            <div class="image-container">
+              <h3>Dogs and Puppies</h3>
+              <img src="Images/BIRTHDAY-DOG.jpeg" alt="Birthday Dog" />
+              <div class="overlay"></div>
+            </div>
           </div>
           <!-- OTHER DOG IMAGE -->
-          <div id="#dogs">
-            <h3>Puppies!</h3>
-            <img src="Images/IMG_5764.JPG" alt="Picture of a puppy" />
+          <div id="#dogs" class="column">
+            <div class="image-container">
+              <h3>Puppies!</h3>
+              <img src="Images/IMG_5764.JPG" alt="Picture of a puppy" />
+              <div class="overlay"></div>
+            </div>
           </div>
           <!-- MORE DOG IMAGES -->
-          <div>
-            <h3>Dogs and Puppies</h3>
-            <img src="Images/IMG_4953.jpeg" alt="Picture of Dogs" />
+          <div class="column">
+            <div class="image-container">
+              <h3>Dogs and Puppies</h3>
+              <img src="Images/IMG_4953.jpeg" alt="Picture of Dogs" />
+              <div class="overlay"></div>
+            </div>
           </div>
           <!-- DOG IMAGE -->
-          <div>
-            <h3>Dogs and Puppies</h3>
-            <img
-              src="https://cdn.whole-dog-journal.com/wp-content/uploads/2024/02/GettyImages-1033022846-scaled.jpg.optimal.jpg"
-              alt="picture of dogs"
-            />
+          <div class="column">
+            <div class="image-container">
+              <h3>Dogs and Puppies</h3>
+              <img
+                src="https://cdn.whole-dog-journal.com/wp-content/uploads/2024/02/GettyImages-1033022846-scaled.jpg.optimal.jpg"
+                alt="picture of dogs"
+              />
+              <div class="overlay"></div>
+            </div>
           </div>
           <!-- RABBIT IMAGE -->
-          <div id="rabbit">
-            <h3>Rabbits</h3>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg"
-              alt="picture of a rabbit"
-            />
+          <div id="rabbit" class="column">
+            <div class="image-container">
+              <h3>Rabbits</h3>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg"
+                alt="picture of a rabbit"
+              />
+              <div class="overlay"></div>
+            </div>
           </div>
           <!-- GUINEA PIG IMAGE -->
-          <div id="guineapig">
-            <h3>Guinea Pigs!</h3>
-            <img
-              src="https://news.clas.ufl.edu/wp-content/uploads/sites/4/2020/06/AdobeStock_345118478-copy-1440x961-1-e1613512040649-768x644.jpg"
-              alt="picture of a guinea pigs"
-            />
+          <div id="guineapig" class="column">
+            <div class="image-container">
+              <h3>Guinea Pigs!</h3>
+              <img
+                src="https://news.clas.ufl.edu/wp-content/uploads/sites/4/2020/06/AdobeStock_345118478-copy-1440x961-1-e1613512040649-768x644.jpg"
+                alt="picture of a guinea pigs"
+              />
+              <div class="overlay"></div>
+            </div>
           </div>
           <!-- FISH IMAGE -->
-          <div id="fish">
-            <h3>FISH!</h3>
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUm5fqPjYJ1ZQPiPphFH0BocpO412ECODSw&s"
-              alt="picture of fish"
-            />
+          <div id="fish" class="column">
+            <div class="image-container">
+              <h3>FISH!</h3>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUm5fqPjYJ1ZQPiPphFH0BocpO412ECODSw&s"
+                alt="picture of fish"
+              />
+              <div class="overlay"></div>
+            </div>
           </div>
           <!-- REPTILE IMAGE -->
-          <div id="reptile">
-            <h3>Reptiles.</h3>
-            <img
-              src="https://i.natgeofe.com/n/5506954d-6e0f-444c-aa83-a24adbe874e1/reptiles-hero_16x9.jpg?w=1200"
-              alt="picture of a reptile"
-            />
+          <div id="reptile" class="column">
+            <div class="image-container">
+              <h3>Reptiles.</h3>
+              <img
+                src="https://i.natgeofe.com/n/5506954d-6e0f-444c-aa83-a24adbe874e1/reptiles-hero_16x9.jpg?w=1200"
+                alt="picture of a reptile"
+              />
+              <div class="overlay"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -98,7 +123,7 @@
     <!-- VIDEOS -->
     <section>
       <!-- DOG VIDEO-->
-      <div id="videos">
+      <div id="videos" class="container">
         <h3>Videos</h3>
         <iframe
           width="1280"
