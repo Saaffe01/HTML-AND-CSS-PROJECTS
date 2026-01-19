@@ -115,3 +115,88 @@ img{
     padding-bottom: 170px;
 }
 
+/* IMAGE ONE */
+.overlay{
+    position: absolute;
+    width: 700px;
+    height: 550px;
+    background-color: rgb(90, 90, 90);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+/* Triggers the hover effect of the overlay on Image 1 with a 60% opacity */
+.overlay:hover{
+    opacity: 0.6;
+}
+
+/* IMAGE TWO */
+.zoom{
+    transform: scale(1); /* Sets the base size of image 2 for a zoom in effect */
+    transition: 0.5s ease-out; /* creates a smooth transition for the zoom effect */
+    z-index: 3; /* Sets image position in the stack layer behind navbar so zoom effect does not cover the navbar */
+
+}
+/* Creates a zoom in effect on image 2 */
+.zoom:hover{
+    transform: scale(1.5); /* Scales image 2 to grow half of its size */
+    transition: 0.5s ease-out;
+}
+
+/* IMAGE 3 */
+/* Creates the position of the animation burst and hides any overflow of the shape size going beyond the dges of image 3 */
+.circle{
+    position: relative;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/* Sets up the burst animation shape and position before the hover effect is triggered */
+.circle::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 50%; /* Creates a circle/oval shape */
+    opacity: 0; /* Makes ths shape invisible until hover effect is triggered */  
+    top: 50%;
+    left: 50%; /* Top and left position the circle to the center of image 3 */
+    transform: translate(-50%, -50%); /* allows the circle to evenly expand from the center */
+    animation: burst-reverse 1s;
+}
+
+/* Triggers the hover effect on the circle class selected ::before */
+.circle:hover::before{
+    animation: burst 1s;
+    animation-fill-mode: forwards; 
+}
+
+/* Creates a growing circle effect */
+@keyframes burst{
+    0% {
+        opacity: 0.2;
+        background-color: rgb(224, 224, 224);
+    }
+    100% {
+        opacity: 0.7;
+        background-color: rgb(224, 224, 224);
+        width: 300%;
+        height: 300%;
+
+    }
+}
+
+/* Animation of the circle shrinking back to the center of the image */
+@keyframes burst-reverse{
+    0%{
+        opacity: 0.7;
+        background-color: rgb(224, 224, 224);
+        width: 300%;
+        height: 300%;
+    }
+    100%{
+        opacity: 0.2;
+        background-color: rgb(224, 224, 224);
+
+    }
+}
