@@ -1,0 +1,117 @@
+/* NAVBAR */
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 4; /* Sets the position of the navbar in the stack layer so it is on top */
+}
+
+ul{
+    list-style-type: none; /* Removes the default bullet point list styling */
+    background-color: #363636;
+    margin: -10 -10 0px -10; /* Margin value order!! */
+    overflow: hidden; /* Hides excess margin space expanding past scroll bar */
+    display: flex; /* Uses flexbox to align the navbar items in a row */
+    align-items: center;
+}
+
+a{
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none; /* Removes the default underline from links */
+    text-transform: uppercase; /* Transform all text to uppercase regardless of the case that is typed in the HTML file */
+    width: 100px;
+    padding: 30px;
+    text-align: center;
+    transition: background-color 0.4s ease-in;
+}
+
+/* NAVBAR ROLLOVER EFFECTS */
+a:hover, .drop:hover{
+    background-color: rgb(228, 159, 0);
+    color: rgb(49, 49, 49);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease-in;
+}
+
+/* Stykles and hides the anchor links within the IMAGES link div tag */
+.rollover-menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Displays anchor elements when the user hovers their mouse over the images link */
+
+.drop:hover .rollover-menu{
+    display: block;
+}
+
+.rollover-menu a{
+    /* Specifically styles the anchor elements within the rollover menu div */
+    color: #363636;
+}
+
+
+/* Specifically styles the hover effect for the anchor elements within the rollover menu div */
+.rollover-menu a:hover{
+    color: white;
+
+}
+
+/* Specifically styles the first anchor element within the rollover menu div tag */
+.rollover-menu a:hover:nth-child(1){
+    background-color: rgb(117, 20, 20); 
+}
+
+/* Specfically styles the second anchor element child within the rollover manu div tag */
+.rollover-menu a:hover:nth-child(2){
+    background-color: rgb(87, 7, 7); 
+}
+
+/* Specifically styles the third anchor element child within the rollover manu div tag */
+.rollover-menu a:hover:nth-child(3){
+    background-color: rgb(48, 2, 2); 
+}
+
+/* FOOTER */
+footer{
+    background-color: #363636;
+    margin: 30px -10px -10px -10px; /* Margin value order!! */
+    overflow: hidden; /* Hides excess margin space expanding past scroll bar */;
+    height: 70px;
+
+}
+
+/* Styles the text within the footer */
+
+.footer-text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    color: rgb(228, 159, 0);
+    text-align: center;
+}
+
+/* IMAGES */
+img{
+    width: 700px;
+    height: 550px;
+}
+
+/* Creates a container for each image to be held in */
+.image-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+/* creates a uniform amount of space between each image */
+#image3{
+    padding-bottom: 170px;
+}
+
