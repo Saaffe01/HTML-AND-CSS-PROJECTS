@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+img {
+    width: 1200x;
+    height: 400px;
+}
+
+#centered {
+    text-align: center;
+}
+
+iframe{
+    height: 350px;
+    width: 560px;
+}
