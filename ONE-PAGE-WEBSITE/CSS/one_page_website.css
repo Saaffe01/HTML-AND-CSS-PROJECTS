@@ -3,11 +3,22 @@ body {
     font-size: large;
 }
 
-div {
+
+.text-field {
     width: auto;
     margin: auto;
     border: 0px solid black;
-    border-radius: 2px 2px 2px 2px;
+    border-radius: 12px 12px 12px 12px;
     background-color: black;
     color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 15px 20px;
+    font-size: 1.2rem;;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
 }
