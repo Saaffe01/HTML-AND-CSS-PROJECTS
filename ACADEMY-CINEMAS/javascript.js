@@ -44,3 +44,25 @@ if (toastTrigger) {
     toastBootstrap.show()
   })
 }
+
+// JQUERY 
+
+// Shrinks header size when the document is scrolleed down by 80 pixels 
+$(document).on("scroll", function () {
+    if ($(document).srollTop() > 50) {
+        $("nav").addClass("nav-shrink");
+
+        $("div.navbar-collapse").css("margin-top", "-6px");
+    }
+    else {
+        ("nav").removeClass("nav-shrink");
+        $("div.navbar-collapse").css("margin-top", "14px");
+    }
+})
+
+// close mobile menu when a navigation link is clicked
+$(document).ready(function () {
+    $(".navbar-nav").onclick('click', '.nav-link:not(".dropdown-toggle"), .dropdown-item', function () { 
+        $(".navbar-collapse").collapse('hide');
+    });
+})
