@@ -14,7 +14,7 @@ popoverTriggerList.forEach(function (element) {
 
 // initial toast 
 const toastElList = document.querySelectorAll('.toast')
-const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option))
+const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl))
 
 // function to display toast with selected options 
 function displaySelectedMovieOptions() {
@@ -66,3 +66,4 @@ $(document).ready(function () {
         $(".navbar-collapse").collapse('hide');
     });
 })
+
