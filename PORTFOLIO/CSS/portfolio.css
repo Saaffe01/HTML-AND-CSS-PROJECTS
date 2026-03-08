@@ -1,0 +1,49 @@
+/* Font from https://developer.apple.com/fonts/ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* glass effect or navbar */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.7) !important;
+    
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+input, textarea {
+    background: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(5px);
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+
+.no-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.project-card {
+    min-width: 350px;
+    scroll-snap-align: center;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.name-brand {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -2px;
+}
